@@ -17,6 +17,6 @@ class PromptInjection(Runnable):
             ) from e
         model = pipeline("text-classification", model="deepset/deberta-v3-base-injection")
         injection_classification = model(input)
-        injection_classification_json = ast.literal_eval(str(injection_classification[0]))
 
-        return injection_classification_json["label"]
+        return injection_classification
+

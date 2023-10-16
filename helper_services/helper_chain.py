@@ -29,5 +29,5 @@ class HelperChain(BaseHelper):
         return tcount_chain
 
     def get_chain(self, helper_type) -> Runnable:
-        citation_function = chain_map[helper_type]
-        return getattr(self, citation_function)()
+        helper_function = chain_map[helper_type]
+        return getattr(self, helper_function)()
