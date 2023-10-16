@@ -5,3 +5,10 @@ fastapi
 langserve
 sse_starlette
 uvicorn
+pydantic==1.10.3
+tiktoken
+presidio-analyzer
+presidio-anonymizer
+# Required for prompt injection chain
+transformers
+torch
